@@ -1,0 +1,38 @@
+@media screen and (max-width: 768px){
+#dtNav, #dtNavbutton{
+	display: none;
+}
+
+header .dtHeadnav{
+	float: left;
+	transition-timing-function: ease;
+	transition: 0.5s;
+}
+
+#dtNav{
+	background: rgba(255,255,255,1);
+	width: calc(100% - 0%);
+	float: none;
+	overflow: auto;
+	text-align: center;
+	transition-timing-function: ease;
+	transition: 0.5s;
+}
+
+main #dtBoxframe .dtBox-trans-row{
+  float:none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+  padding:10px;
+}
+
+
+  aside#sidebar{
+    float:none;
+    text-align:center;
+  }
+
+
+}

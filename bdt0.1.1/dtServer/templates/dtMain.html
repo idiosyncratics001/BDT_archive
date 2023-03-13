@@ -1,0 +1,49 @@
+{% extends 'dtTemplate.html' %}
+
+{% block main %}
+			<section class="dtShowcase">
+			  <div class="dtContainer">
+			    <h1>First Basic Design</h1>
+			    <p>This is the first boot of RDT, Ryu's Data Tools. An collection of the best practices of programming as collected by Ryu. All your favorite tools for programming, databases and Machine Learning are going to be here.
+			    </p>
+			  </div>
+	    	</section>
+
+	    	<section class="dtDeposit">
+		      <div class="dtContainer">
+		        <h1>Deposit life here:</h1>
+		        <form>
+		          <input type="email" placeholder="Drop Something...">
+		          <button type="submit" class="dtButton">Deposit</button>
+		        </form>
+		      </div>
+    		</section>
+
+	    	<section class="dtBoxframe">
+	    		<div class="dtContainer">
+			        <div class="dtBox-m row">
+						<header class="dtBoxHeader">HTML5 Markup</header>
+						<img src="/static/img/logo_html.png">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+			        </div>
+			        <div class="dtBox-m row">
+						<header class="dtBoxHeader">CSS3 Style</header>
+						<img src="/static/img/logo_css.png">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+			        </div>
+			        <div class="dtBox-m ">
+						<header class="dtBoxHeader">Graphic Design</header>
+						<img src="/static/img/logo_brush.png">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+			        </div>
+			    </div>
+	    	</section>
+	    	
+{% endblock %}
+
+{% block footer %}
+
+{{ pageid }}
+
+{% endblock %}
+

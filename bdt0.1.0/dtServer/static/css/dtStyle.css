@@ -1,0 +1,222 @@
+/* Global */
+body {
+    font: 15px/1.5 Segoe UI Symbol,Trebuchet MS;
+    padding:0;
+    margin:0;
+    height: 100%;
+    width: calc(100% - 0%);
+    background: url(../img/body.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container{
+  margin:auto;
+  overflow:hidden;
+}
+
+.switchboard, .headtitle #navburger{
+  display: none;
+}
+
+.button_1{
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+header { 
+    overflow: hidden;
+    background:#35424a;
+    color:#ffffff;
+    padding-top:10px;
+    min-height:50px;
+    border-bottom:#e8491d 3px solid;
+}
+
+.headtitle #navburger{
+  float: left;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+header .headtitle h1{
+  float: left;
+  margin:0;
+  padding: 0 10px 0 10px;
+}
+
+header .headnav{
+    float: right;
+    margin: 0;
+}
+
+header .headnav a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  float: left;
+  font-size:16px;
+  padding: 10px 10px 0 10px;  
+}
+
+header .highlight, .headnav .current{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+nav {
+  float: left;
+  top: 50;
+  left: 0;
+  background: rgba(255,255,255,0.8);
+  height: calc(100% - 0%); 
+  margin-top: 0px;
+  padding-top: 10px;
+  overflow: auto;
+  transition-timing-function: ease;
+  transition: 0.5s;
+}
+
+nav .navbutton{
+  padding-bottom: 30px;
+}
+
+nav #navbutton{
+  float: right;
+  top:0;
+  cursor: pointer;
+}
+
+nav #navprofile{
+  color: purple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+nav .profile_img{
+  width: 100px;
+  height: 100px;
+  padding-top: 10px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+nav .menu-icon{
+  width: 20px;
+  height: 20px;
+  padding: 0 20px 0 20px;
+}
+
+nav .menu-text{
+  padding-right: 20px;
+}
+
+nav #navmenu a{
+  color: purple;
+  display: block;
+  text-decoration: none;
+  line-height: 50px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-timing-function: ease;
+  transition-property: background;
+}
+
+nav a:hover{
+  background: #19B3D3;
+  transition: 0.5s;
+}
+
+main {
+}
+
+/* Showcase */
+main #showcase{
+  min-height:400px;
+  background:url('../img/arm.png') no-repeat;
+  text-align:center;
+  color:#444548;
+  text-shadow: 1px 1px #ffffff;
+
+}
+
+main #showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+main #showcase p{
+  font-size:20px;
+}
+
+/* Newsletter */
+main #newsletter{
+  padding:0px;
+  color:#ffffff;
+  background:#35424a
+}
+
+main #newsletter h1{
+  float:left;
+  padding-left: 20px;
+}
+
+main #newsletter form {
+  float:right;
+  margin-top:15px;
+  margin-right: 15px;
+}
+
+main #newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+main #newsletter input[type="submit"]{
+  float: right;
+}
+
+/* Boxes */
+main #boxes{
+  margin-top:20px;
+}
+
+main #boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+main #boxes .box img{
+  width:90px;
+}
+
+footer {  
+  color: purple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}

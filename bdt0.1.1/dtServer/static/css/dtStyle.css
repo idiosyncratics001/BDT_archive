@@ -1,0 +1,291 @@
+/* Global */
+html{
+  scrollbar-width: thin;
+  scrollbar-color: #e8491d #35424a;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track-piece  {
+    background-color: #35424a;
+}
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #e8491d;
+}
+
+body {
+    font: 15px/1.5 Segoe UI Symbol,Trebuchet MS;
+    padding:0;
+    margin:0;
+    height: 100%;
+    width: calc(100% - 0%);
+    background: url(../img/body.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.dtContainer{
+  margin:auto;
+  padding: auto;
+  overflow:hidden;
+}
+
+.dtSwitchboard{
+  display: none;
+}
+
+.dtMain{
+  overflow:hidden;
+  position: center;
+}
+
+.dtButton{
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding: 0 20px 0 20px;
+  color:#ffffff;
+}
+
+
+/*header title bar*/
+.dtHeader { 
+    overflow: hidden;
+    background:#35424a;
+    color:#ffffff;
+    padding-top:10px;
+    min-height:50px;
+    border-bottom:#e8491d 3px solid;
+}
+
+.dtHeadtitle .dtNavburger{
+  display: flex;
+  float: left;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  padding: 10px 0px 0 10px;
+}
+
+header .dtHeadtitle h1{
+  float: left;
+  margin:0;
+  padding: 0 10px 0 10px;
+}
+
+header .dtHeadnav{
+    float: right;
+    margin: 0;
+}
+
+header .dtHeadnav a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  float: left;
+  font-size:16px;
+  padding: 10px 10px 0 10px;  
+}
+
+header .highlight, .dtHeadnav .dtCurrent{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+#dtNav{
+  float: left;
+  top: 50;
+  left: 0;
+  background: rgba(255,255,255,0.8);
+  height: calc(100% - 0%); 
+  margin-top: 0px;
+  padding-top: 10px;
+  overflow: auto;
+  transition-timing-function: ease;
+  transition: 0.5s;
+}
+
+nav .dtNavbutton{
+  padding-bottom: 30px;
+}
+
+nav #dtNavbutton{
+  float: right;
+  top:0;
+  cursor: pointer;
+}
+
+nav #dtProfile{
+  color: purple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+nav .dtProfile-img{
+  width: 100px;
+  height: 100px;
+  padding-top: 10px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+nav .dtMenu-icon{
+  width: 20px;
+  height: 20px;
+  padding: 0 20px 0 20px;
+}
+
+nav .dtMenu-text{
+  padding-right: 20px;
+}
+
+#dtNav a{
+  color: purple;
+  display: block;
+  text-decoration: none;
+  line-height: 50px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-timing-function: ease;
+  transition-property: background;
+}
+
+#dtNav a:hover{
+  background: #19B3D3;
+  transition: 0.5s;
+}
+
+#dtFooter {  
+  color: purple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* items & functions for main */
+
+/* color styles */
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+
+/* dtShowcase */
+.dtShowcase{
+  min-height:400px;
+  background:url('../img/arm.png') no-repeat;
+  text-align:center;
+  color:#444548;
+  text-shadow: 1px 1px #ffffff;
+}
+.dtShowcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+.dtShowcase p{
+  font-size:20px;
+}
+
+
+/* Depositbox */
+.dtDeposit{
+  padding:0px;
+  color:#ffffff;
+  background:#35424a
+}
+.dtDeposit h1{
+  float:left;
+  padding-left: 20px;
+}
+.dtDeposit form{
+  float:right;
+  margin-top:15px;
+  margin-right: 15px;
+}
+.dtDeposit input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+.dtDeposit input[type="submit"]{
+  float: right;
+}
+
+
+/* dtBoxframe & boxes */
+.dtBoxframe{
+  justify-content: center;
+  align-items: center;
+}
+.dtBoxHeader{
+  font-weight: bold;
+  margin:10px;
+}
+.dtBox-s, .dtBox-m, .dtBox-l{
+  text-align: center;
+  overflow: hidden;
+}
+.dtBox-s img, .dtBox-m img,.dtBox-l img{
+  width:20%;
+  padding:10px;
+}
+.dtBox-s{
+  width: 10%;
+}
+.dtBox-m{
+  width: 30%;
+}
+.dtBox-l{
+  width: 100%;
+}
+.row{
+    float:left;
+    padding: 0 10px 0 10px;
+}
+
+/* Articles */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}

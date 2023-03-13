@@ -1,0 +1,30 @@
+{% extends 'dtTemplate.html' %}
+
+{% block main %}
+
+<section id="dtBoxframe">
+	<div class="dtContainer">
+	    <div class="dtBox-m row">
+	      <img src="/static/img/logo_html.png">
+	      <h3>HTML5 Markup</h3>
+	      <p>iframe< width="640" height="390" src="http://magicbox:8888/tree?" width="50%" height="300" style="border:1px solid black;">/iframe<</p>
+	    </div>
+	    <div class="dtBox-m row">
+	      <img src="/static/img/logo_brush.png">
+	      <h3>Problem</h3>
+	      <p>failed to use Iframe to embed Jupyter Notebook.. or more precise to much hassle for now.
+			Run sepparate server, manual here:</p>
+			<a href="https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#notebook-public-server" target="_blank"><img class="menu-icon" src="/static/img/mnu_forms.png"><span class="menu-text"></span></a>
+	    </div>
+	    <div class="dtBox-m row">
+	      <img src="/static/img/logo_brush.png">
+	      <h3>Sollution</h3><br>
+	      <p>Use a script to start the kernel when needed</p>
+	     	<form>
+			<button type="submit" class="dtButton" onclick=" window.open('http://localhost:8888/lab','_blank')">Go to Jupyter Lab</button>
+			</form>
+	    </div>
+	</div>
+</section>
+
+{% endblock %}

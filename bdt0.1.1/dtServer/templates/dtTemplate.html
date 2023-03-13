@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Ryu's Data Tools">
+	<meta name="author" content="Rei Ryu">
+	<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="/static/css/dtStyle.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/dtStyleMob.css">
+</head>
+
+<body>
+<div class="dtContainer">
+	<div class="dtSwitchboard">
+		<input type="checkbox" id="dtCheck" unchecked>
+		<input type="checkbox" id="dtMobCheck" unchecked>
+	</div>
+	<header class="dtHeader">
+		<div class="dtContainer"> 
+			<div class="dtHeadtitle">
+				<img src="/static/img/nav_burger.png" class="dtNavburger" onclick="dtMobNavButton()">
+				<h1><span class="highlight">DT. </span>{{ pageid }}</h1>
+	      	</div>
+
+	      	<div class="dtHeadnav">
+		        <a href="/jupyterlab" class="dtCurrent">Jupyter/Lab</a>
+		        <a href="jupyterlab">Jupyter/Notebook</a>
+		        <a href="#">Login</a>
+	      	</div>
+	    </div>
+	</header>
+	<nav id="dtNav">
+		<div class="dtContainer">
+			<div class="dtNavbutton">
+				<span id="dtNavbutton" onclick="dtNavButton()"><<</span>
+			</div>
+
+			<div id="dtProfile">
+		      <img src="/static/img/1.png" class="dtProfile-img">
+		      <h4>Jessica</h4>
+			</div> 
+
+			<div id="dtNavmenu">
+				<a href="/dashboard"><img class="dtMenu-icon" src="/static/img/mnu_dashboard.png">
+							<span class="dtMenu-text">Dashboard</span></a>
+				<a href="#"><img class="dtMenu-icon" src="/static/img/mnu_config.png">
+							<span class="dtMenu-text">Components</span></a>
+				<a href="#"><img class="dtMenu-icon" src="/static/img/mnu_tables.png">
+							<span class="dtMenu-text">Tables</span></a>
+				<a href="#"><img class="dtMenu-icon" src="/static/img/mnu_forms.png">
+							<span class="dtMenu-text">Forms</span></a>
+				<a href="/about"><img class="dtMenu-icon" src="/static/img/mnu_about.png">
+							<span class="dtMenu-text">About</span></a>
+			</div>
+		</div>
+	</nav>
+
+	<main class="dtMain">
+		<div class="dtContainer">
+			{% block main %} {% endblock %}
+		</div>
+	</main>
+	
+	<footer id="dtFooter">
+		<div class="dtContainer"> 
+			<p>Ryu's Data Tools, Copyright &copy; 2020</p>
+			<p>Current page:{% block footer %}{% endblock %}</p>
+
+		</div>
+	</footer>
+
+</div>
+<script src="/static/js/dt.core.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

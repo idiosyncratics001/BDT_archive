@@ -1,0 +1,11 @@
+# API framework
+fastapi
+uvicorn
+jinja2
+
+# functions
+yfinance
+sqlalchemy
+pandas
+
+# ML & DL

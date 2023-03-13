@@ -1,0 +1,12 @@
+# API framework
+fastapi
+uvicorn
+jinja2
+aiofiles
+
+# functions
+sqlalchemy
+pandas
+jupyterlab
+
+# ML & DL
